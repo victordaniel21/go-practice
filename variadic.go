@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func numbers(num ...int) int {
+func numSum(num ...int) int {
 	var number int
 	for _, nums := range num {
 		number += nums
@@ -11,8 +11,17 @@ func numbers(num ...int) int {
 
 }
 
+func numSub(num ...int) int {
+	var number int
+	for _, nums := range num {
+		number -= nums
+	}
+	return number
+}
+
 func main() {
-	total := numbers(12, 15, 18)
-	fmt.Println(total)
+	totalSum := numSum(12, 15, 18)
+	totalSub := numSub(100, 20, 30)
+	fmt.Println(totalSum, totalSub)
 
 }
