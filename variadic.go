@@ -24,4 +24,8 @@ func main() {
 	totalSub := numSub(100, 20, 30)
 	fmt.Println(totalSum, totalSub)
 
+	newNum := 100
+	total := newNum - numSum(10, 30)
+	fmt.Println(total)
+
 }
